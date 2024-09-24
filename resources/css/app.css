@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Noto-Sans-TC";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');;
+}
+
+@font-face {
+    font-family: "Noto-Serif-TC";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html {
+        @apply box-border p-0 m-0;
+    }
+
+    body {
+        @apply font-noto-serif-tc;
+    }
+
+    p {
+        @apply leading-none;
+    }
+
+    i {
+        @apply cursor-pointer;
+    }
+
+    input, textarea {
+        @apply outline-none border-none bg-transparent;
+    }
+
+}
